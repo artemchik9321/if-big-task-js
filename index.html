@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dz big if</title>
+</head>
+<body>
+    <script>
+        //1.
+         let number = prompt("введите число ");
+         if (number % 2 === 0) 
+         {
+            alert("парное");
+         } 
+         else 
+         {
+            alert("не парное");
+         }
+
+        //2.
+        let number1 = prompt("первое число ");
+        let number2 = prompt("второе число ");
+
+        if (number1 < number2) 
+        {
+            alert("минимальное число " + number1);
+        } 
+        else if (number2 < number1) 
+        {
+            alert("минимальное число " + number2);
+        } 
+        else 
+        {
+            alert("числа равны");
+        }
+
+        //3.
+        let number = prompt("введите число ");
+
+        if (number > 0) 
+        {
+            alert("число положительно");
+        } 
+        else if (number < 0) 
+        {
+            alert("число отрицательное");
+        } 
+        else 
+        {
+            alert("число 0");
+        }
+
+        //4.
+        let number1 = prompt("первое число ");
+        let number2 = prompt("второе число ");
+        let number3 = prompt("третье число ");
+
+        let max = number1;
+        if (number2 > max) 
+        {
+            max = number2;
+        }
+        if (number3 > max) 
+        {
+            max = number3;
+        }
+        alert("наибольшее число " + max);
+
+        //5.calc
+        let a = parseInt(prompt("введи первое число "));
+        let b = parseInt(prompt("введи второе число "));
+
+        let operation = prompt("выбери действие:\n1) + \n2) - \n3) * \n4) / ");
+        let result;
+
+        if (operation == 1) 
+        {
+            result = a + b;
+            alert("рез + : " + result);
+        } 
+        else if (operation == 2) 
+        {
+            result = a - b;
+            alert("рез - : " + result);
+        } 
+        else if (operation == 3) 
+        {
+            result = a * b;
+            alert("рез * : " + result);
+        } 
+        else if (operation == 4) 
+        {
+            if (b !== 0) 
+            {
+                result = a / b;
+                alert("рез / : " + result);
+            } 
+            else 
+            {
+                alert("делить нельзя на 0");
+            }
+        } 
+        else 
+        {
+            alert("eror");
+        }
+
+        //6.
+        let number = parseInt(prompt("введите число "));
+
+        if (number >= 1 && number <= 30) 
+        {
+            alert("число отсносится к диапазону с 1 до 30");
+        } 
+        else 
+        {
+            alert("число не относится.");
+        }
+
+        //7.
+        let x = parseInt(prompt("введите число X "));
+        let y = parseInt(prompt("введите число Y "));
+
+        if (y === 0) 
+        {
+            alert("делить нельзя на 0");
+        } 
+        else if (x % y === 0) 
+        {
+            alert("число X кратное числу Y ");
+        } 
+        else 
+        {
+            alert("число X не кратное числу Y ");
+        }
+
+        //8.
+        let number = parseInt(prompt("введите число "));
+
+        let krat3 = number % 3 === 0;
+        let krat5 = number % 5 === 0;
+        let krat7 = number % 7 === 0;
+
+        if (krat3) 
+        {
+            alert("число кратное 3");
+        } 
+        else 
+        {
+            alert("число не кратное 3");
+        }
+        if (krat5) 
+        {
+            alert("число кратное 5");
+        } 
+        else 
+        {
+            alert("число не кратное 5 ");
+        }
+        if (krat7) 
+        {
+             alert("число кратное 7 ");
+        } 
+        else 
+        {
+             alert("число не кратное 7 ");
+        }
+
+        //9.
+        let number = parseInt(prompt("введите число "));
+        let value;
+
+        if (number < 0) 
+        {
+        value = number * -1; 
+        } 
+        else 
+        {
+            value = number;
+        }
+        alert("модуль числа " + value);
+
+        let height = parseInt(prompt("твой рост "));
+        let weight = parseInt(prompt("твой вес "));
+
+        let bestw = height - 110;
+        let weightd = weight - bestw;
+
+        if (weightd > 0) 
+        {
+            alert("Вам надо скинуть " + weightd + " кг, чтобы было отлично");
+        } else if (weightd < 0) 
+        {
+            alert("тебе надо набрать " + (weightd * -1) + " кг, чтобы было отлично");
+        } 
+        else 
+        {
+            alert("отлично");
+        }
+    </script>
+</body>
+</html>
